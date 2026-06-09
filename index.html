@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Revolve Hair Studio — Barrie, Ontario</title>
-<meta name="description" content="A Barrie hair studio known for stylists who listen. Colour, blonding, balayage and precision cuts shaped around you.">
+<meta name="description" content="A Barrie hair studio where skilled stylists handle colour, blonding, balayage and precision cuts with real care — and results that stay consistent.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,500;1,6..96,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -245,6 +245,9 @@
     .about-grid,.founders-grid,.visit-grid{grid-template-columns:1fr;gap:54px}
     .founders-img{order:-1}
     .pad{padding:96px 0}
+    /* show image blocks immediately on mobile (no clip-reveal / parallax paint bug) */
+    .clip{clip-path:none}
+    .ph{transform:none !important;will-change:auto}
   }
   @media(max-width:720px){
     header{padding:18px 22px}header.shrink{padding:12px 22px}
@@ -282,7 +285,7 @@
     <a class="navlink" href="#work">The Work</a>
     <a class="navlink" href="#reviews">Reviews</a>
     <a class="navlink" href="#visit">Visit</a>
-    <a class="btn btn-solid magnetic" href="tel:+17057282200">Call to Book</a>
+    <a class="btn btn-solid magnetic" href="https://www.fresha.com/lvp/revolve-hair-studio-anne-street-north-barrie-WqrWoX" target="_blank" rel="noopener">Book Online</a>
   </nav>
 </header>
 
@@ -297,9 +300,9 @@
       <span class="line" style="--i:1"><span class="inner">like <em>you</em> — every</span></span>
       <span class="line" style="--i:2"><span class="inner">time you sit down.</span></span>
     </h1>
-    <p class="hero-sub">Colour, blonding, balayage and precision cuts — shaped around you by stylists who listen first.</p>
+    <p class="hero-sub">Colour, blonding, balayage and precision cuts — shaped around you by stylists who sweat the details.</p>
     <div class="hero-cta">
-      <a class="btn btn-solid magnetic" href="tel:+17057282200">Call to Book</a>
+      <a class="btn btn-solid magnetic" href="https://www.fresha.com/lvp/revolve-hair-studio-anne-street-north-barrie-WqrWoX" target="_blank" rel="noopener">Book Online</a>
       <span class="hero-call">Call <strong>(705) 728-2200</strong></span>
     </div>
     <div class="rating-chip">
@@ -315,8 +318,8 @@
 
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee">
-  <span>Skilled Stylists</span><span>Attentive Service</span><span>A Welcoming Studio</span><span>Consistent Results</span><span>Stylists Who Listen</span>
-  <span>Skilled Stylists</span><span>Attentive Service</span><span>A Welcoming Studio</span><span>Consistent Results</span><span>Stylists Who Listen</span>
+  <span>Skilled Stylists</span><span>Attentive Service</span><span>A Welcoming Studio</span><span>Consistent Results</span><span>Client-Focused</span>
+  <span>Skilled Stylists</span><span>Attentive Service</span><span>A Welcoming Studio</span><span>Consistent Results</span><span>Client-Focused</span>
 </div></div>
 
 <!-- ABOUT -->
@@ -328,7 +331,7 @@
         <span class="line" style="--i:0"><span class="inner">Quietly known</span></span>
         <span class="line" style="--i:1"><span class="inner">for <em>getting it right.</em></span></span>
       </h2>
-      <p class="reveal d1">Revolve is a Barrie hair studio built on a simple idea: the best hair starts with someone who actually listens. Before a single section is parted, we talk about your hair, your routine, and the look you genuinely want to live in.</p>
+      <p class="reveal d1">Revolve is a Barrie hair studio built on a simple idea: great hair comes from genuine skill and close attention. Before a single section is parted, we talk through your hair, your routine, and the look you genuinely want to live in.</p>
       <p class="reveal d2">From there it's care and craft — colour mixed by hand for your tone, cuts shaped to how you wear your hair, and the kind of warm, unhurried room you don't mind spending an afternoon in. The result is what clients keep coming back for: consistent, lived-in hair that always feels like you.</p>
       <div class="about-mark reveal d2">Revolve Hair Studio</div>
     </div>
@@ -346,12 +349,18 @@
       <h2 class="lead reveal-lines"><span class="line"><span class="inner">Crafted around you, not a trend.</span></span></h2>
     </div>
     <div class="svc-list">
-      <div class="svc-row reveal" data-cursor=""><span class="num">01</span><h3>Cut &amp; Style</h3><p>A precision cut shaped to your hair, your face and how you actually wear it day to day.</p></div>
-      <div class="svc-row reveal" data-cursor=""><span class="num">02</span><h3>Colour</h3><p>Rich, dimensional colour — from subtle refreshes to full transformations, mixed by hand for your tone.</p></div>
-      <div class="svc-row reveal" data-cursor=""><span class="num">03</span><h3>Balayage &amp; Lived-In Blonde</h3><p>Soft, grown-out-beautifully colour that looks effortless for months, not weeks.</p></div>
-      <div class="svc-row reveal" data-cursor=""><span class="num">04</span><h3>Platinum &amp; Blonding</h3><p>Bright, clean blondes done with the patience and care your hair deserves.</p></div>
-      <div class="svc-row reveal" data-cursor=""><span class="num">05</span><h3>Treatments &amp; Gloss</h3><p>Bond-building treatments and glosses that leave hair shining, healthy and touchable.</p></div>
-      <div class="svc-row reveal" data-cursor=""><span class="num">06</span><h3>Occasion Styling</h3><p>Weddings, events, or just because — styling that lasts from the first photo to the last dance.</p></div>
+      <div class="svc-row reveal" data-cursor=""><span class="num">01</span><h3>Women's Haircut</h3><p>A precision cut shaped to your hair, your face and how you actually wear it day to day.</p></div>
+      <div class="svc-row reveal" data-cursor=""><span class="num">02</span><h3>Hair Coloring</h3><p>Rich, dimensional colour — from subtle refreshes to full transformations, mixed by hand for your tone.</p></div>
+      <div class="svc-row reveal" data-cursor=""><span class="num">03</span><h3>Balayage</h3><p>Soft, grown-out-beautifully colour that looks effortless for months, not weeks.</p></div>
+      <div class="svc-row reveal" data-cursor=""><span class="num">04</span><h3>Highlights</h3><p>Hand-placed brightness that adds depth and dimension exactly where you want it.</p></div>
+      <div class="svc-row reveal" data-cursor=""><span class="num">05</span><h3>Blow Dry</h3><p>A polished, photo-ready finish with the body and movement to last all day.</p></div>
+      <div class="svc-row reveal" data-cursor=""><span class="num">06</span><h3>Curly Hair</h3><p>Cutting and styling that works with your natural texture, not against it.</p></div>
+      <div class="svc-row reveal" data-cursor=""><span class="num">07</span><h3>Keratin Treatment</h3><p>Smoothing that tames frizz and cuts down styling time for months at a time.</p></div>
+      <div class="svc-row reveal" data-cursor=""><span class="num">08</span><h3>Permanent Hair Straightening</h3><p>Lasting, sleek results for hair that stays smooth between appointments.</p></div>
+      <div class="svc-row reveal" data-cursor=""><span class="num">09</span><h3>Perm</h3><p>Soft waves or defined curls, built to suit your hair and how you like to style it.</p></div>
+      <div class="svc-row reveal" data-cursor=""><span class="num">10</span><h3>Hair Extensions</h3><p>Added length and fullness, blended seamlessly so it looks and feels like your own.</p></div>
+      <div class="svc-row reveal" data-cursor=""><span class="num">11</span><h3>Hair Weaves</h3><p>Expertly applied weaves for natural-looking volume, length and versatility.</p></div>
+      <div class="svc-row reveal" data-cursor=""><span class="num">12</span><h3>Wig Install</h3><p>Precise, comfortable installs and styling for a flawless, secure finish.</p></div>
     </div>
   </div>
 </section>
@@ -398,9 +407,9 @@
         <span class="line" style="--i:0"><span class="inner">The part clients</span></span>
         <span class="line" style="--i:1"><span class="inner">mention <em>most.</em></span></span>
       </h2>
-      <p class="reveal d1">At Revolve, you're actually heard. The team takes the time to understand your hair and what you want from it before picking up the scissors or the brush.</p>
+      <p class="reveal d1">At Revolve, the details get noticed. The team takes the time to understand your hair and what you want from it before picking up the scissors or the brush.</p>
       <p class="reveal d2">That attention is the whole point. It's why the results stay consistent, why the room feels welcoming, and why so many appointments end with the next one already booked.</p>
-      <a class="btn magnetic reveal d2" href="tel:+17057282200" style="margin-top:14px">Book With Us</a>
+      <a class="btn magnetic reveal d2" href="https://www.fresha.com/lvp/revolve-hair-studio-anne-street-north-barrie-WqrWoX" target="_blank" rel="noopener" style="margin-top:14px">Book With Us</a>
     </div>
   </div></div>
 </section>
@@ -414,7 +423,7 @@
     <div class="rev-stars reveal d1">★★★★★</div>
     <div class="rev-count reveal d1">Across <span class="cnt" id="countNum" data-target="69">0</span> Google reviews</div>
     <div class="chips reveal d2">
-      <span class="chip">Skilled Stylists</span><span class="chip">Attentive Service</span><span class="chip">Welcoming Atmosphere</span><span class="chip">Consistent Results</span><span class="chip">Truly Listens</span>
+      <span class="chip">Skilled Stylists</span><span class="chip">Attentive Service</span><span class="chip">Welcoming Atmosphere</span><span class="chip">Consistent Results</span><span class="chip">Client-Focused</span>
     </div>
     <a class="btn magnetic reveal d3" href="https://www.google.com/maps/search/Revolve+Hair+Studio+Barrie" target="_blank" rel="noopener" style="border-color:var(--champagne);color:var(--champagne)">Read the Reviews on Google</a>
   </div></div>
@@ -436,7 +445,7 @@
         <div class="val"><a href="tel:+17057282200">(705) 728-2200</a></div>
       </div>
       <div class="visit-cta reveal d2">
-        <a class="btn btn-solid magnetic" href="tel:+17057282200">Call to Book</a>
+        <a class="btn btn-solid magnetic" href="https://www.fresha.com/lvp/revolve-hair-studio-anne-street-north-barrie-WqrWoX" target="_blank" rel="noopener">Book Online</a>
         <a class="btn magnetic" href="https://www.google.com/maps/dir/?api=1&destination=353+Anne+St+N%2C+Barrie%2C+ON+L4N+7Z9" target="_blank" rel="noopener">Get Directions</a>
       </div>
     </div>
@@ -517,8 +526,8 @@ if (matchMedia('(pointer:fine)').matches && !reduced){
   });
 }
 
-/* PARALLAX */
-if (!reduced){
+/* PARALLAX (desktop only — avoids mobile paint bugs on clipped images) */
+if (!reduced && matchMedia('(min-width:981px)').matches){
   const items = [...document.querySelectorAll('[data-speed]')];
   let ticking=false;
   function px(){ const vh=innerHeight; items.forEach(el=>{ const r=el.getBoundingClientRect(); const c=r.top+r.height/2-vh/2; el.style.transform=`translateY(${c*-parseFloat(el.dataset.speed)}px)`; }); ticking=false; }
